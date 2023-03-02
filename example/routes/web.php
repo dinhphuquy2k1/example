@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\CategoryController;
+// use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\UserController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,8 +14,6 @@ use App\Http\Controllers\CategoryController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome', ['data'=> App\Models\categories::all()]);
-});
-
-Route::post('/delete', [CategoryController::class,'delete']);
+Route::resource('users', UserController::class);
+// Route::get('/users', [UserController::class,'get'])->name('getUsers');
+// Route::post('/delete', [CategoryController::class,'delete']);

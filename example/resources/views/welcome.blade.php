@@ -414,7 +414,6 @@
 
 <body class="antialiased">
     <table>
-
         @foreach ($data as $item)
             <tr>
                 <td>

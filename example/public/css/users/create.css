@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+}
+
+.wrapper-create {
+    background-color: #fff;
+    /* box-shadow: 0 0 16px rgb(23 27 42 / 24%); */
+    overflow: auto;
+    border-radius: 4px;
+    position: relative;
+    z-index: 10;
+}
+
+.popup-content {
+    padding: 24px 24px 0;
+    position: relative;
+}
+
+.form-group:not(.top) {
+    margin-bottom: 16px;
+}
+
+.form-group.slide-detail label.form-group-label {
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+    height: 20px;
+    margin-bottom: 8px;
+    padding: 0;
+    width: auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.form-group.slide-detail .required {
+    color: #e54848;
+    margin-left: 5px;
+}
+
+.flex,
+.flex1 {
+    flex: 1;
+    min-height: 0;
+    min-width: 0;
+}
+
+.ms-input {
+    background: #fff;
+    padding: 0;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.ms-editor {
+    border-radius: 3.5px;
+}
+
+.ms-editor .border.error {
+    border: 1px solid #ef5350;
+}
+
+.ms-editor .border {
+    border: 1px solid #e0e0e0;
+    border-radius: 3.5px;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.ms-input-item {
+    border: none;
+    padding: 9px 12px;
+    background: 0 0;
+}
+
+.error-icon {
+    margin: 5px 6px 0 0;
+}
+
+.icon24 {
+    height: 24px;
+    width: 24px;
+    position: relative;
+}
+
+.error-text {
+    color: #ef5350;
+    margin-top: 6px;
+}
+
+.ms-input-item:focus {
+    outline: none;
+}
+
+.ms-editor .border:not(.error):focus-within {
+    border-color: #1a73e8;
+}
+
+.popup-footer {
+    padding: 12px 24px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.flex-rtl {
+    display: flex;
+    flex-direction: rtl;
+    direction: rtl;
+    justify-content: flex-end;
+}
+
+button.btn[data-v-dfa415a4] {
+    padding: 0;
+    outline: none;
+}
+
+.btn {
+    min-height: 36px;
+    min-width: 80px;
+    border: none;
+    box-shadow: none;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    border-radius: 4px;
+    white-space: nowrap;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+.btn.primary {
+    color: #fff;
+    background: #2979ff;
+}
+
+.btn:not(:disabled).primary:hover {
+    background: #1a73e8;
+    cursor: pointer;
+}

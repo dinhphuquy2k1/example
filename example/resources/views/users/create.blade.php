@@ -113,7 +113,7 @@
                         <div class="flex">
                             <div class="ms-input ms-editor w-100">
                                 <div class="flex-row border @error('password') error @enderror">
-                                    <input type="text" class="ms-input-item flex" placeholder="Password"
+                                    <input type="password" class="ms-input-item flex" placeholder="Password"
                                         name="password" value="{{ old('password') }}">
                                     <div class="icon24 error error-icon has-tooltip">
                                     </div>
@@ -135,7 +135,7 @@
                         <div class="flex">
                             <div class="ms-input ms-editor w-100">
                                 <div class="flex-row border @error('confirm_password') error @enderror">
-                                    <input type="text" class="ms-input-item flex" placeholder="Xác nhận mật khẩu"
+                                    <input type="password" class="ms-input-item flex" placeholder="Xác nhận mật khẩu"
                                         name="confirm_password" value="{{ old('confirm_password') }}">
                                     <div class="icon24 error error-icon has-tooltip">
                                     </div>

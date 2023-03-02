@@ -42,6 +42,16 @@
                             </th>
                             <th class="ms-th">
                                 <div class="ms-th-content flex-row">
+                                    <div>Email</div>
+                                </div>
+                            </th>
+                            <th class="ms-th">
+                                <div class="ms-th-content flex-row">
+                                    <div>Số điện thoại</div>
+                                </div>
+                            </th>
+                            <th class="ms-th">
+                                <div class="ms-th-content flex-row">
                                     <div>Địa chỉ</div>
                                 </div>
                             </th>
@@ -55,6 +65,12 @@
                                 </td>
                                 <td class="ms-td ms-col-td ">
                                     {{ $item->name }}
+                                </td>
+                                <td class="ms-td ms-col-td ">
+                                    {{ $item->email }}
+                                </td>
+                                <td class="ms-td ms-col-td ">
+                                    {{ $item->phone }}
                                 </td>
                                 <td class="ms-td ms-col-td ">
                                     {{ $item->address }}

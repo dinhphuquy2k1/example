@@ -28,7 +28,8 @@ class CreateUserRequest extends FormRequest
             'password' => 'required|max:255',
             'name' => 'required|max:255',
             'address' => 'required|max:255',
-            'phone' =>  'max:15',
+            'phone' =>  'max:15|integer',
+            'confirm_password' => 'same:password'
         ];
     }
 
@@ -40,7 +41,11 @@ class CreateUserRequest extends FormRequest
             'password.required' => 'Mật khẩu không được để trống!',
             'password.max' => 'Mật khẩu tối đa chứa 255 kí tự !',
             'name.required' => 'Họ và tên không được để trống!',
+            'name.max' => 'Họ và tên chỉ chứa tối đa 255 kí tự !',
             'address.required' => 'Địa chỉ không được để trống!',
+            'phone.integer' => 'Số điện thoại không đúng định dạng',
+            'phone.max' => 'Số điện thoại không đúng định dạng',
+            'confirm_password.same' => 'Mật khẩu không trùng khớp'
         ];
     }
 }
